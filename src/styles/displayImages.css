@@ -1,0 +1,6 @@
+.displayImages{
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    margin: 0 auto;
+}

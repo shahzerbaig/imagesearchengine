@@ -1,0 +1,14 @@
+.loadMore{
+    height: 3rem;
+    width:7rem;
+    background-color: black;
+    color: white;
+    font-size: 900;
+    border-radius:5px;
+    margin: 30px auto;
+}
+.loadmorecontainer{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}

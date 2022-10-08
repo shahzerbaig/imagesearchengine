@@ -1,0 +1,41 @@
+input[type='submit']{
+    display: none;
+}
+.searchForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 3.6rem;
+    margin:0;
+}
+#search{
+    height: inherit;
+    width: 40rem;
+    border-radius:2px;
+    box-shadow: 3px 4px 10px  #888888D0;
+}
+#search::placeholder{
+    margin-top: 5px;
+    font-size: 2.6rem;
+}
+#submit{
+    border:1px solid black;
+    background-color: black;
+    width: 8rem;
+    border-radius:2px;
+    box-shadow: 3px 4px 10px  #888888D0;
+
+}
+
+svg{
+    height: 50px;
+    width: 50px;
+    margin-left:25%;
+    text-align: center;
+}
+@media screen and (max-width:768px) {
+    svg{
+        margin-left: 2px;
+        margin-top: 10px;
+    }
+}

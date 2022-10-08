@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+#subheadin, #totalImageText{
+    margin:2px;
+}
+.statistics{
+
+}
+#subheading{
+    
+    font-weight: 900;
+
+}
+#totalImageText{
+    font-weight: 300;
+}
