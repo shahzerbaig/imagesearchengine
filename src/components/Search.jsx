@@ -1,12 +1,26 @@
 import React,{useState} from 'react';
 import '../styles/search.css';
+import { getSearch } from '../fetch/getSearch';
+import apple2 from '../assets/apple2.png';
+import apple3 from '../assets/apple3.jpeg';
 
-
-export const Search = () => {
+export const Search = (props) => {
+    let tempArray = [{id:'sha1',imageUrl:apple2},{id:'sha3',imageUrl:apple3}]
     const [searchText,getSearchText] = useState('');
+    const setData = props.setData
+    async function handleForm(event){
+        event.preventDefault();
+        console.log(searchText);
+        const response = getSearch(searchText);
+        response.then(res => res.json())
+                .then(res => setData(res.results))
+                .catch(err => console.log(`this is the Error ${err}`))
+       
+        
+    }
     return (
         <div className='search'>
-            <form className='searchForm'>
+            <form className='searchForm' onSubmit={handleForm}>
             <input 
             id='search'
             type='search'
