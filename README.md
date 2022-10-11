@@ -1,2 +1,0 @@
-Access = yZrWtKe_uzlx-4E0moOSpn1z_8RPRDYJrlFppLsvCGI
-secret = oeFCO8aXcHpylsgPUDXFFXwXCt0z-ui90oSAo6hVTHw
