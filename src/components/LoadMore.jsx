@@ -1,12 +1,18 @@
 import React from 'react';
-import '../styles/loadmore.css'
-export const LoadMore = (props) => {
-    const logdata=()=>{
-        console.log(props.data)
+import '../styles/loadmore.css';
+import { useSelector } from 'react-redux';
+
+//This Component is for Load Button
+export const LoadMore = () => {
+    const data = useSelector((state)=> state);
+
+    //Load Button function which when activated print data of the state on the console
+    function logdata(){
+        console.log(`This is from load Button ${data.data.length}`);
     }
     return (
         <div className='loadmorecontainer'>
-            <button onClick={logdata} className='loadMore'>Load More</button>
+            {data.data.length !==0?<button onClick={logdata} className='loadMore'>Load More</button>:<p></p>}
         </div>
         
     )
